@@ -1,0 +1,11 @@
+name = "studyapp-api"
+main = "src/index.js"
+compatibility_date = "2025-12-01"
+
+[[durable_objects.bindings]]
+name = "ROOMS"
+class_name = "RoomDO"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["RoomDO"]

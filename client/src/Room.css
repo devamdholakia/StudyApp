@@ -1,0 +1,138 @@
+/* Room.css */
+.room-font {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 19px;
+  position: relative;
+  background-color: #1a1a1a;
+}
+
+.room-page {
+  flex: 1;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.room-title {
+  margin: 0;
+  font-size: 18px;
+  display: none; /* Hide title to save space */
+}
+
+.room-status {
+  margin: 0 0 8px 0;
+  font-size: 12px;
+  flex-shrink: 0;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.video-grid {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+.video-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.video-label {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.85);
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.video-el {
+  width: 520px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 16px;
+  background: #000;
+}
+
+.call-controls {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 8px;
+  padding: 8px;
+  flex-shrink: 0;
+}
+
+.control-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(40, 40, 40, 0.95);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.control-btn:hover {
+  background: rgba(50, 50, 50, 0.95);
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.control-btn:active {
+  transform: scale(0.95);
+}
+
+.control-btn-muted {
+  background: rgba(255, 59, 48, 0.9);
+  color: white;
+}
+
+.control-btn-muted:hover {
+  background: rgba(255, 59, 48, 1);
+}
+
+.control-btn-off {
+  background: rgba(142, 142, 147, 0.9);
+  color: white;
+}
+
+.control-btn-off:hover {
+  background: rgba(142, 142, 147, 1);
+}
+
+.room-header-left-section {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 100;
+}
+
+.room-header-left-section .logo {
+  width: 70px;
+  height: 70px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.room-header-left-section .logo:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
+}

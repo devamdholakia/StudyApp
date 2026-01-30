@@ -1,0 +1,42 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle with dark theme gradient -->
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(40, 40, 40, 0.95);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(26, 26, 26, 0.95);stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="timerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(255, 255, 255, 0.9);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(255, 255, 255, 0.7);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer circle with dark theme -->
+  <circle cx="60" cy="60" r="56" fill="url(#logoGradient)" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+  
+  <!-- Inner shadow effect -->
+  <circle cx="60" cy="60" r="54" fill="none" stroke="rgba(0,0,0,0.3)" stroke-width="1"/>
+  
+  <!-- Timer/Pomodoro circle -->
+  <circle cx="60" cy="60" r="40" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="2.5"/>
+  
+  <!-- Clock hands (25 minutes = focus time) -->
+  <!-- Minute hand pointing to 5 (25 minutes) -->
+  <line x1="60" y1="60" x2="60" y2="30" stroke="rgba(255,255,255,0.9)" stroke-width="3" stroke-linecap="round" transform="rotate(150 60 60)"/>
+  
+  <!-- Hour hand (subtle) -->
+  <line x1="60" y1="60" x2="60" y2="45" stroke="rgba(255,255,255,0.75)" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Center dot -->
+  <circle cx="60" cy="60" r="4" fill="rgba(255,255,255,0.9)"/>
+  
+  <!-- Decorative dots at 12, 3, 6, 9 -->
+  <circle cx="60" cy="22" r="2" fill="rgba(255,255,255,0.7)"/>
+  <circle cx="98" cy="60" r="2" fill="rgba(255,255,255,0.7)"/>
+  <circle cx="60" cy="98" r="2" fill="rgba(255,255,255,0.7)"/>
+  <circle cx="22" cy="60" r="2" fill="rgba(255,255,255,0.7)"/>
+  
+  <!-- Study/connection lines (representing collaboration) -->
+  <path d="M 35 45 Q 45 50 55 45" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M 65 45 Q 75 50 85 45" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,115 @@
+.room-header-left-section .logo {
+    width: 70px;
+    height: 70px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.room-header-left-section .logo:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
+}
+
+.header-middle-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-main {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo-main:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.2));
+}
+
+.name-input {
+  width: 250px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 19px;
+  text-align: center;
+  background: rgba(40, 40, 40, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 0 16px;
+  transition: all 0.2s ease;
+}
+
+.name-input:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.3);
+  background: rgba(50, 50, 50, 0.95);
+}
+
+.name-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.font-type {
+    font-weight: 700;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.9);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-txt {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0;
+}
+
+.join-btn { 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 0;
+    background: rgba(40, 40, 40, 0.95);
+    color: rgba(255, 255, 255, 0.9);
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    }
+
+.join-btn:hover {
+  background: rgba(50, 50, 50, 0.95);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.input-error {
+  border-color: rgba(255, 100, 100, 0.6) !important;
+  background: rgba(60, 40, 40, 0.95) !important;
+}
+
+.error-message {
+  color: rgba(255, 150, 150, 0.9);
+  font-size: 14px;
+  font-weight: 500;
+  margin: -10px 0 0 0;
+  text-align: center;
+  min-height: 20px;
+}
